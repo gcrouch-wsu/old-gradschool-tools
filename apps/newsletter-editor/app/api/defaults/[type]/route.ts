@@ -4,10 +4,8 @@ import { NextRequest, NextResponse } from 'next/server'
 import { defaultFFModel, defaultBriefingModel, defaultLetterModel } from '@/lib/defaults'
 import type { NewsletterData } from '@/types/newsletter'
 
-export async function GET(
-  request: NextRequest,
-  { params }: { params: { type: string } }
-) {
+export async function GET(request: NextRequest, props: { params: Promise<{ type: string }> }) {
+  const params = await props.params;
   try {
     const templateType = params.type
 

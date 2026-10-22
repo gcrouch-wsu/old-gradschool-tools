@@ -36,5 +36,23 @@
   "bugs": {
     "url": "https://github.com/gcrouch-wsu/WSU-Mail-Editor/issues"
   },
-  "homepage": "https://github.com/gcrouch-wsu/WSU-Mail-Editor#readme"
+  "homepage": "https://github.com/gcrouch-wsu/WSU-Mail-Editor#readme",
+  "engines": {
+    "node": ">=24.22.1 <25"
+  },
+  "overrides": {
+    "sharp": "^0.35.5",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19"
+  }
 }
